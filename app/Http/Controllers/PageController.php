@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Train;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,6 +12,7 @@ class PageController extends Controller
     }
 
     public function trainList(){
-        return view('trainList');
+        $Trains = Train::all();
+        return view('trainList', compact("Trains"));
     }
 }
