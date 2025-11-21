@@ -7,8 +7,8 @@
     <title>@yield("title")</title>
 </head>
 <body>
-    @include ("partials/header")
-    @yield ("main")
-    @include("partials/footer.php")
+    @include("partials/header")
+    @yield("main")
+    @include("partials/footer")
 </body>
 </html>

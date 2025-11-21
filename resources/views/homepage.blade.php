@@ -5,5 +5,5 @@
 @endsection
 
 @section("main")
-    <h1>SEI NELLA HOMEPAGE!</h1>
+    <h1 class="mt-5">SEI NELLA HOMEPAGE!</h1>
 @endsection
