@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('classes', function (Blueprint $table) {
+        Schema::table('trains', function (Blueprint $table) {
 
             //aggiungiamo una colonna totale_posti che sarà in integer
             $table->integer("totale_posti");
@@ -20,7 +20,7 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('classes', function (Blueprint $table) {
+        Schema::table('trains', function (Blueprint $table) {
             $table->dropColumn("totale_posti");
         });
     }
