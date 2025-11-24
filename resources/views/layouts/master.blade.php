@@ -6,7 +6,7 @@
     @vite(["resources/sass/app.scss", "resources/js/app.js"])
     <title>@yield("title")</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include("partials/header")
     @yield("main")
     @include("partials/footer")

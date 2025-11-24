@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container py-3">
 
-            <a class="navbar-brand fs-3 fw-semibold" href="{{ "homepage" }}">
+            <a class="navbar-brand fs-3 fw-semibold" href="{{ route("homepage") }}">
                 @yield("title")
             </a>
 
@@ -16,11 +16,11 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ "homepage" }}">Home</a>
+                        <a class="nav-link active" href="{{ route("homepage") }}">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ "trainList" }}">Lista treni</a>
+                        <a class="nav-link" href="{{ route("trainList") }}">Lista treni</a>
                     </li>
                 </ul>
             </div>

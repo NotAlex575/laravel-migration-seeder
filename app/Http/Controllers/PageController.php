@@ -15,4 +15,5 @@ class PageController extends Controller
         $Trains = Train::all();
         return view('trainList', compact("Trains"));
     }
+
 }
