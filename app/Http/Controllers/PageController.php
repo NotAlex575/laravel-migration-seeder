@@ -12,7 +12,11 @@ class PageController extends Controller
     }
 
     public function trainList(){
-        $Trains = Train::all();
+        $today = "2025-01-01 00:00:00";
+        $Trains = Train::where('orario_partenza', '>=', $today)
+                   ->orderBy('orario_partenza', 'asc')
+                   ->get();
+
         return view('trainList', compact("Trains"));
     }
 
